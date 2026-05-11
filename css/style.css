@@ -355,7 +355,7 @@ header nav ul li a{
         margin-top: clamp(0px, 3.5714vw, 10px);
     }
     .section1 .p2{
-        margin: clamp(0px, 8.571, 24px) 0;
+        margin: clamp(0px, 8.571vw, 24px) 0;
     }
 }
 
@@ -545,9 +545,9 @@ header nav ul li a{
 
 
 .section3{
-    padding: 60px;
+    padding: 60px 85px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background-color: #f8f9fa;
@@ -575,7 +575,7 @@ header nav ul li a{
     justify-content: center;
     gap: 5px;
     min-height: 133.92px;
-    flex: 1;
+    flex: 0 1 auto;
 }
 
 @media only screen and (max-width: 767px){
@@ -593,11 +593,11 @@ header nav ul li a{
 }
 footer{
     display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: #0b1d3a;
     color: #c5c9d0;
-    padding: 80px 40px;
+    padding: 80px 85px;
     flex-wrap: wrap;
     /* gap: 20px; */
 }
@@ -618,11 +618,11 @@ footer ul{
 }
 
 footer div{
-    height: 143px;
-    flex: 1;
+
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footerDiv3 h4{
@@ -643,6 +643,7 @@ footer div{
         row-gap: 25px;
     
     }
+
     footer div{
         align-items: flex-start;
     }
@@ -657,12 +658,12 @@ footer div{
         display: flex;
         flex-direction: column;
         row-gap: 25px;
-       
     }
+
     footer div{
         width: clamp(0px, 90%, 280px);
-        height: auto;
     }
+
     footer ul{
         font-size: 16px;
     }
